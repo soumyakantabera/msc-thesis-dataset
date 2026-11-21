@@ -1,0 +1,4 @@
+Sample,firms,med_DIO,med_AIG,med_GM,distress_pct
+US,166,84.0,0.0,0.363,15.3
+International (ex-US),113,84.0,0.0,0.341,13.9
+Full panel,279,84.0,0.0,0.356,14.7

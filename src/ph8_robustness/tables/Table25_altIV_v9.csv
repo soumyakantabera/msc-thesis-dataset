@@ -1,0 +1,4 @@
+IV,beta,SE,t,p_value,Stars,N
+"Log diff, peer-median (primary)",-0.0152,0.0061,-2.49,0.0135,**,2488
+"Simple %, peer-median",-0.0124,0.0053,-2.37,0.0187,**,2488
+"Log diff, no peer adjustment",-0.0157,0.0059,-2.67,0.0079,***,2488

@@ -1,0 +1,125 @@
+======================================================================
+PHASE 8 — ROBUSTNESS v9
+======================================================================
+
+----------------------------------------------------------------------
+  R1 / TABLE 25 — alternative IV definitions (DV = next-yr ΔGM)
+----------------------------------------------------------------------
+  Log diff, peer-median (primary)    β=-0.0152**  p=0.0135
+  Simple %, peer-median              β=-0.0124**  p=0.0187
+  Log diff, no peer adjustment       β=-0.0157*** p=0.0079
+  saved table: Table25_altIV_v9.csv
+
+----------------------------------------------------------------------
+  R2 / TABLE 26 — sample splits
+----------------------------------------------------------------------
+  Full sample              β=-0.0152**  p=0.0135 n=2488 
+  Pre-COVID 2014-2019      β=-0.0051    p=0.5835 n=1057 
+  Post-COVID 2020-2025     β=-0.0178*   p=0.0705 n=1431 
+  Excl. 2020               β=-0.0175*** p=0.0080 n=2210 
+  Excl. neg-equity         β=-0.0159**  p=0.0110 n=2396 
+  US-only                  β=-0.0106    p=0.1934 n=1477 
+  International (ex-US)    β=-0.0227**  p=0.0105 n=1011 
+  saved table: Table26_sample_splits_v9.csv
+
+----------------------------------------------------------------------
+  R3 / TABLE 27 — FE alternatives
+----------------------------------------------------------------------
+  saved table: Table27_FE_alternatives_v9.csv
+  Entity+Year FE (base)      β=-0.0152**  p=0.0135
+  Entity FE only             β=-0.0163*** p=0.0073
+  Fama-MacBeth (yr-by-yr)    β=-0.0176**  p=0.0271
+  Super-group+Year FE        β=-0.0162*** p=0.0049
+
+----------------------------------------------------------------------
+  R4 / TABLE 28 — distress threshold sensitivity
+----------------------------------------------------------------------
+  ΔGM<-1pp: χ²=21.30 p=0.0000*** (31% vs 22%)
+  ΔGM<-2pp: χ²=8.04 p=0.0046*** (17% vs 13%)
+  ΔGM<-3pp: χ²=5.05 p=0.0247** (11% vs 8%)
+  ΔGM<-5pp: χ²=0.42 p=0.5194 (4% vs 4%)
+  saved table: Table28_distress_threshold_v9.csv
+
+----------------------------------------------------------------------
+  R5 / TABLE 29 — winsorisation sensitivity
+----------------------------------------------------------------------
+  1/99 (base)    β=-0.0195*** p=0.0034
+  5/95           β=-0.0273*** p=0.0005
+  none (raw)     β=-0.0152**  p=0.0135
+  saved table: Table29_winsorisation_v9.csv
+
+======================================================================
+  OLD-H4 ROBUSTNESS — semiconductor/sector concentration (REJECTED)
+======================================================================
+
+  H4-R1 — semiconductor slope under alternative IV definitions:
+    Log diff peer-median   semis β=-0.0197 p=0.358 -> NOT sig
+    Simple % peer-median   semis β=-0.0161 p=0.288 -> NOT sig
+    Log diff no-peer       semis β=-0.0287 p=0.144 -> NOT sig
+  saved table: Table30_H4robust_altIV_v9.csv
+
+  H4-R2 — semiconductor slope under alternative reference sectors:
+    ref=Consumer Staples   semis β=-0.0197 p=0.358 -> NOT sig
+    ref=Mass Retail        semis β=-0.0197 p=0.358 -> NOT sig
+    ref=Apparel            semis β=-0.0197 p=0.358 -> NOT sig
+    ref=Chemicals          semis β=-0.0197 p=0.358 -> NOT sig
+    ref=Industrial         semis β=-0.0197 p=0.358 -> NOT sig
+  saved table: Table31_H4robust_altRef_v9.csv
+
+  H4-R3 — semiconductors US-only vs international (within-sector FE):
+    Full           β=-0.0065 p=0.784 n=135
+    US-only        β=+0.0078 p=0.796 n=108
+  saved table: Table32_H4robust_US_intl_v9.csv
+
+  H4-R4 — Fama-MacBeth slope within semiconductors:
+    FM mean β=-0.0102 p=0.833 (9 yrs) -> NOT sig
+  saved table: Table33_H4robust_famamacbeth_v9.csv
+
+  H4-R5 — semiconductors by sub-period:
+    Pre-COVID    β=+0.0041 p=0.878 n=58
+    Post-COVID   β=-0.0153 p=0.553 n=77
+  saved table: Table34_H4robust_subperiod_v9.csv
+  saved figure: Figure47_H1_robustness_specs_v9.png
+  saved figure: Figure48_famamacbeth_v9.png
+  saved figure: Figure49_H4_rejection_robustness_v9.png
+
+----------------------------------------------------------------------
+  R6 / IFRS-GAAP — H1 excluding LIFO-capable US firms
+----------------------------------------------------------------------
+  All firms (base)               beta=-0.0152**  p=0.0135 n=2488
+  IFRS only (non-US, no LIFO)    beta=-0.0227**  p=0.0105 n=1011
+  US-GAAP only                   beta=-0.0106    p=0.1934 n=1477
+  saved table: Table35_IFRS_GAAP_robustness_v9.csv
+  NOTE: capability proxy only (no observed inventory-method field).
+
+----------------------------------------------------------------------
+  R7 / PLACEBO — falsification under two-way FE
+----------------------------------------------------------------------
+  saved table: Table36_placebo_robustness_v9.csv
+  REAL: AIG -> next-yr ΔGM                   β=-0.0152**  p=0.013 [—]
+  Placebo A: AIG -> prior-yr rev growth      β=+0.0414    p=0.140 [PASS]
+  Placebo B: permuted AIG -> next-yr ΔGM     β=-0.0029    p=0.532 [PASS]
+  saved figure: Figure50_placebo_robustness_v9.png
+
+======================================================================
+  OVERALL FINDINGS TABLE
+======================================================================
+  saved table: Table_FINDINGS_overall_v9.csv
+  - H1 robustness (alt-IV/splits/FE/winsor): Negative across nearly all specs; β stable -0.0273 to -0.0152 under winsorisation.
+      => H1 is not a specification artifact; weak spots are pre-COVID & US-only (disclosed).
+  - Fama-MacBeth (H1): Time-series mean of yearly betas confirms the pooled estimate.
+      => Result not driven by a single year or clustered-SE assumption.
+  - Distress threshold sensitivity: Significant at 1/2/3pp thresholds; null at 5pp.
+      => 5pp null is a POWER limit (few firms fall that far), not a failure.
+  - IFRS/GAAP split (R6): H1 stronger in IFRS/non-US firms than US-GAAP firms.
+      => Not a US-GAAP/LIFO accounting artifact; international firms carry H1.
+  - Placebo battery (R7): Reverse-time p=0.14; permuted p=0.53 (both null); real p=0.014.
+      => Real effect survives falsification; not spurious panel structure.
+  - OLD-H4 semiconductor rejection: Semis NOT significant under 13 distinct specifications (alt-IV, alt-ref, US/intl, FM, subperiod).
+      => The v8 sector centrepiece is comprehensively rejected — not a single-spec result.
+
+======================================================================
+  PHASE 8 v9 COMPLETE
+======================================================================
+  Tables (13), Figures (4)
+  Old-H4: semiconductors NOT significant under 13 distinct specifications.

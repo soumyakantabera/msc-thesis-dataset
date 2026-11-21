@@ -1,0 +1,4 @@
+IV,Coef,SE,p_value,Stars,N_obs
+"Log diff, peer-median (primary)",-0.01518,0.00611,0.0135,**,2488
+"Simple %, peer-median",-0.01243,0.00525,0.0187,**,2488
+"Log diff, no peer adj",-0.01566,0.00586,0.0079,***,2488

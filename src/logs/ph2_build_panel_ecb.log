@@ -1,0 +1,34 @@
+=================================================================
+BUILDING PANEL FROM RAW DATA (Thesis v9 - FINAL (ECB FX, avg/eop split))
+=================================================================
+
+[1/7] Loading raw FactSet fundamentals...
+      Loaded 3,300 rows from 3 files
+
+[2/7] Creating ratios for screening...
+
+[3/7] Applying screening (relevance + size/history)  [USD-first fix]...
+      Retained 280 firms after screening
+
+[4/7] Loading prices and merging...
+
+[5/7] Adding ECB FX (avg/eop) + lagged FRED macro...
+
+[6/7] Building thesis variables (log growth AIG as primary)...
+      Quality gate: nulling 1 degenerate firm-years (|GM|>200%)
+      Quality gate: dropping 1 firm(s) with <6 finite-GM years: ['RIVN-US']
+      Dropped 14 empty (NaN-Year) rows
+
+[7/7] Saving output files...
+
+=================================================================
+PANEL BUILD COMPLETE - EXCELLENT STATUS
+=================================================================
+Total firm-years after screening : 3,055
+Unique firms                     : 279
+AIG non-null                     : 2,770
+dGM_fwd non-null (usable H1/H2)  : 2,488
+12m Return non-null (usable H3)  : 2,770
+StressScore non-null (usable H5) : 2,488
+SEK/DKK flagged firms            : 0
+=================================================================

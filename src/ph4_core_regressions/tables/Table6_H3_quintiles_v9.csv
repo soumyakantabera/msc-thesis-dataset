@@ -1,0 +1,4 @@
+Benchmark,EW_Q5_Q1,EW_NW_t,VW_Q5_Q1,VW_NW_t,N_years,Result
+Peer super-group (PRIMARY),-0.0474,-3.03,0.0292,0.57,11,SUPPORTED
+Regional index,-0.0592,-4.36,-0.0585,-0.94,11,SUPPORTED
+SPY,-0.0465,-3.39,-0.0482,-0.82,11,SUPPORTED

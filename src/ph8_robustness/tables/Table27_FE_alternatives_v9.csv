@@ -1,0 +1,5 @@
+Spec,beta,p_value,Stars,N
+Entity+Year FE (base),-0.0152,0.0135,**,2488
+Entity FE only,-0.0163,0.0073,***,2488
+Fama-MacBeth (yr-by-yr),-0.0176,0.0271,**,10
+Super-group+Year FE,-0.0162,0.0049,***,2488

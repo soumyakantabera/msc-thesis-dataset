@@ -1,0 +1,9 @@
+Firm,Ticker,Country,Sector,med_DIO,peak_AIG,signal_played_out
+Nike,NKE-US,USA,Apparel,98.0,0.26,"yes — 2022 build, margin fell"
+Philips,PHIA-NL,NLD,Medical Devices,108.0,0.39,"yes — 2020-21 build, margin fell"
+Dollar Tree,DLTR-US,USA,Mass Retail,83.0,0.18,"partial — build, margin later recovered"
+Ahold Delhaize,AD-NL,NLD,Mass Retail,25.0,0.36,"flat — stable grocer, little signal"
+Align Technology,ALGN-US,USA,Medical Devices,68.0,0.46,"NO — build, margin held (counter-case)"
+Micron,MU-US,USA,Semiconductors,136.0,0.87,firm-level yes; sector NOT significant
+Tesla,TSLA-US,USA,Automotive,63.0,0.33,scale-up; sector NOT significant
+Burberry,BRBY-GB,GBR,Apparel,144.0,0.2,international illustration
