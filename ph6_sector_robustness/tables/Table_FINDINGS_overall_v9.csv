@@ -1,0 +1,10 @@
+Item,Finding,Conclusion
+Sector concentration hypothesis (former H4),"REJECTED. Standalone per-sector FE: 2/13 significant at 5%; predicted-strong (semis, apparel) not significant.","Report as robustness, not a core hypothesis."
+Semiconductors (the v8 centrepiece),"beta=-0.0197, p=0.36 (NOT significant); 80% US.",v8 result (beta=-0.179 on 6 firms) does not replicate on 15 firms.
+Sectors significant at 5% (standalone FE),"Medical Devices (b=-0.033, p=0.046), Consumer Staples (b=-0.032, p=0.027)","Signal concentrated in a few NON-predicted sectors, not apparel/semis."
+Borderline sectors (5-10%),"Mass Retail (p=0.058), Bldg Materials (p=0.058)","Mass Retail sits here (p~0.06): treat as suggestive, NOT significant."
+Method note: interaction vs standalone,"Interaction model uses Staples as reference, so Staples cannot appear in its significant set; standalone FE shows Staples IS significant.",Significant-sector identity is method-dependent; standalone FE is the reported basis.
+US dominance of significant sectors,"Significant sectors are US-heavy (Med Devices 71%, semis 80%).",Disclose: sector results lean on US firms; not a global claim.
+US-only vs international (Table 21),Per-sector slopes broadly similar in sign; most insignificant in both cuts.,No sector shows a robust international-specific concentration.
+Same-year DCFO interaction (Table 23),Cash channel more broadly negative across sectors (semis beta=-0.199).,Consistent with H2 breadth; not a revival of sector-H4.
+"Small-multiples (Figure, all 13 sectors)","Most sectors gentle negative-insignificant; significant at 5%: Medical Devices (b=-0.033, p=0.046), Consumer Staples (b=-0.032, p=0.027).","Single exhibit answers ""why these sectors"" - broad, modest, not concentrated."

@@ -1,0 +1,4 @@
+Test,Coef,p_value,Stars,Expectation,Pass
+REAL: AIG -> next-yr ΔGM,-0.01518,0.0135,**,significant (the real effect),—
+Placebo A: AIG -> PRIOR-yr rev growth,0.04143,0.1399,,null (no reverse causality),PASS
+Placebo B: permuted AIG -> next-yr ΔGM,-0.00289,0.5317,,null (shuffled labels),PASS

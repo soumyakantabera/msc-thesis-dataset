@@ -1,0 +1,7 @@
+Item,Finding,Conclusion
+H2 cash flow by super-group,"Negative in all 6 groups; significant at 5% in 4/6, at 10% in 6/6.","Most universal result — consistent negative sign everywhere, strongest of the four."
+H1 margin by super-group,Significant at 5% only in: Healthcare (a FRAGILE group); Retail borderline (p=0.05).,"Per-group H1 is weak and rests on a fragile group; the pooled H1 result is the reportable one, not the group decomposition."
+Distress by super-group,Significant in only some groups at the per-group level.,Pooled result stronger than any single group (per-group power limited).
+Returns by super-group,Group-fragile; some groups show wrong-sign spreads.,Pooled is primary; per-group decomposition shows where signal is detectable.
+Fragile groups,"S4 Technology (29f, 79% US) and S6 Healthcare (21f, 71% US).",Flag everywhere; do not build narrative on their per-group estimates.
+US-share by group,Ranges 51-79%; tech & healthcare most US-heavy.,Per-group claims for US-heavy groups are effectively US claims.

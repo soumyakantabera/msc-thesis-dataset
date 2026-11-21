@@ -1,0 +1,7 @@
+SuperGroup,Beta,SE,t,p_value,Stars,pp_per_1SD,N_obs,N_firms,US_share_pct,Note
+S1 · Retail,-0.1099,0.0355,-3.1,0.0034,***,-1.77,438,44,56.8,
+S2 · Consumer,-0.0917,0.0477,-1.92,0.0591,*,-1.476,655,66,59.1,
+S3 · Heavy Mfg,-0.1225,0.0433,-2.83,0.006,***,-1.973,703,71,50.7,
+S4 · Technology,-0.1481,0.025,-5.93,0.0,***,-2.386,290,29,79.3,fragile (small/US-heavy)
+S5 · Materials,-0.0848,0.0434,-1.95,0.0568,*,-1.365,474,48,58.3,
+S6 · Healthcare,-0.1107,0.0269,-4.11,0.0005,***,-1.783,210,21,71.4,fragile (small/US-heavy)

@@ -1,0 +1,80 @@
+======================================================================
+PHASE 5 — SUPER-GROUP DECOMPOSITION v9 [FRESH]
+======================================================================
+  Panel: 279 firms | AIG SD=0.1610
+  Panel is US-anchored: 166 of 279 firms (59%) are US-domiciled. Results are an intern...
+  Fragile groups (<35 firms): S4 Technology (29, 79% US), S6 Healthcare (21, 71% US)
+
+----------------------------------------------------------------------
+  TABLE 15 — H1 (next-yr ΔGM) by super-group
+----------------------------------------------------------------------
+  S1 · Retail          β=-0.0369*   p=0.052 | 44f 57%US 
+  S2 · Consumer        β=-0.0178*   p=0.082 | 66f 59%US 
+  S3 · Heavy Mfg       β=-0.0143    p=0.283 | 71f 51%US 
+  S4 · Technology      β=-0.0099    p=0.525 | 29f 79%US fragile (small/US-heavy)
+  S5 · Materials       β=-0.0040    p=0.781 | 48f 58%US 
+  S6 · Healthcare      β=-0.0327**  p=0.046 | 21f 71%US fragile (small/US-heavy)
+  saved table: Table15_H1_by_supergroup_v9.csv
+
+----------------------------------------------------------------------
+  TABLE 16 — H2 (same-yr ΔCFO) by super-group
+----------------------------------------------------------------------
+  S1 · Retail          β=-0.1099*** p=0.003 | 44f 57%US 
+  S2 · Consumer        β=-0.0917*   p=0.059 | 66f 59%US 
+  S3 · Heavy Mfg       β=-0.1225*** p=0.006 | 71f 51%US 
+  S4 · Technology      β=-0.1481*** p=0.000 | 29f 79%US fragile (small/US-heavy)
+  S5 · Materials       β=-0.0848*   p=0.057 | 48f 58%US 
+  S6 · Healthcare      β=-0.1107*** p=0.001 | 21f 71%US fragile (small/US-heavy)
+  saved table: Table16_H2_by_supergroup_v9.csv
+
+----------------------------------------------------------------------
+  TABLE 17 — distress chi-square (Score>=3 vs <=1) by super-group
+----------------------------------------------------------------------
+  S1 · Retail          χ²= 0.05 p=0.820    8% vs 7% | 44f 
+  S2 · Consumer        χ²= 0.32 p=0.573    15% vs 13% | 66f 
+  S3 · Heavy Mfg       χ²= 0.15 p=0.698    17% vs 15% | 71f 
+  S4 · Technology      χ²= 3.22 p=0.073*   26% vs 15% | 29f fragile (small/US-heavy)
+  S5 · Materials       χ²= 2.73 p=0.099*   20% vs 13% | 48f 
+  S6 · Healthcare      χ²= 1.74 p=0.188    22% vs 13% | 21f fragile (small/US-heavy)
+  saved table: Table17_distress_chisq_by_supergroup_v9.csv
+
+----------------------------------------------------------------------
+  TABLE 18 — within-super-group quintile return spread
+----------------------------------------------------------------------
+  S1 · Retail          Q5-Q1=-0.0978 t=-1.68 (11 yrs) 
+  S2 · Consumer        Q5-Q1=-0.0711 t=-2.22 (11 yrs) 
+  S3 · Heavy Mfg       Q5-Q1=-0.0440 t=-1.09 (10 yrs) 
+  S4 · Technology      Q5-Q1=-0.0213 t=-0.19 (10 yrs) fragile (small/US-heavy)
+  S5 · Materials       Q5-Q1=-0.0625 t=-2.11 (10 yrs) 
+  S6 · Healthcare      Q5-Q1=+0.1232 t=+2.27 (10 yrs) fragile (small/US-heavy)
+  saved table: Table18_quintile_by_supergroup_v9.csv
+  saved table: Table19_coverage_us_share_v9.csv
+  saved figure: Figure15_H1_coef_by_supergroup_v9.png
+  saved figure: Figure16_H2_coef_by_supergroup_v9.png
+  saved figure: Figure17_dGM_heatmap_v9.png
+  saved figure: Figure18_faceted_scatter_v9.png
+  saved figure: Figure19_quintile_spread_v9.png
+  saved figure: Figure20_coverage_v9.png
+  saved figure: Figure21_forest_by_supergroup_v9.png
+
+======================================================================
+  OVERALL FINDINGS TABLE
+======================================================================
+  saved table: Table_FINDINGS_overall_v9.csv
+  - H2 cash flow by super-group: Negative in all 6 groups; significant at 5% in 4/6, at 10% in 6/6.
+      => Most universal result — consistent negative sign everywhere, strongest of the four.
+  - H1 margin by super-group: Significant at 5% only in: Healthcare (a FRAGILE group); Retail borderline (p=0.05).
+      => Per-group H1 is weak and rests on a fragile group; the pooled H1 result is the reportable one, not the group decomposition.
+  - Distress by super-group: Significant in only some groups at the per-group level.
+      => Pooled result stronger than any single group (per-group power limited).
+  - Returns by super-group: Group-fragile; some groups show wrong-sign spreads.
+      => Pooled is primary; per-group decomposition shows where signal is detectable.
+  - Fragile groups: S4 Technology (29f, 79% US) and S6 Healthcare (21f, 71% US).
+      => Flag everywhere; do not build narrative on their per-group estimates.
+  - US-share by group: Ranges 51-79%; tech & healthcare most US-heavy.
+      => Per-group claims for US-heavy groups are effectively US claims.
+
+======================================================================
+  PHASE 5 v9 COMPLETE (fresh rebuild)
+======================================================================
+  Tables (6), Figures (7)

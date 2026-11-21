@@ -1,0 +1,8 @@
+Item,Finding,Conclusion
+Binary distress (primary H4),"Score≥3 17.1% vs Score≤1 12.6%; χ²=8.04, p=0.005; Fisher OR=1.44.",SUPPORTED — StressScore is a working distress flag.
+Continuous ΔGM (v9 UPDATE),"High-Low ΔGM=-0.56pp, t=-3.64, p=0.000.",REVERSED from v8: now significant. StressScore separates continuous margins too (not flag-only).
+Monotonicity,"Distress rate rises monotonically 11.7%→13.7%→15.7%→17.1%, then plateaus at Score 4 (17.1%).",Clean ordinal gradient; no dip. Supports the score as a stress measure.
+By super-group,"NO super-group significant at 5% (closest: Technology p=0.07, Materials p=0.10).",Per-group underpowered; the pooled chi-square is the only reportable distress result.
+F1-F4 component decomposition,Underlying flags NOT stored in the v9 panel; component tables omitted.,Honestly dropped — would require fabricating data. Rebuild from raw if needed.
+US-share,High-stress firms span all groups; tech/healthcare most US-heavy (79%/71%).,"Stress flag is broad-based, not a US-only construct."
+Independence from H1 (CRITICAL),StressScore correlates 0.62 with AbnInvPeer AND its outcome (ΔGM) is the H1 outcome.,"Phase 9 is NOT independent corroboration of the inventory→margin link: it shares both the predictor (partly) and the outcome with H1. Report as mechanism illustration, not separate evidence."

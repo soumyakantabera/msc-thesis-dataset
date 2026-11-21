@@ -1,0 +1,22 @@
+FIX1  estimation-sample AIG SD = 0.1610  (v8 was 0.118; ratio 1.36x)
+      example: beta -0.0152 -> -0.245 pp per 1-SD
+
+FIX2  US-share overall:
+group  firms  us_firms  us_share_pct
+  ALL  279.0     166.0          59.5
+
+      US-share by super-group:
+SuperGroup  firms  us_firms  us_share_pct
+        S1   44.0      25.0          56.8
+        S2   66.0      39.0          59.1
+        S3   71.0      36.0          50.7
+        S4   29.0      23.0          79.3
+        S5   48.0      28.0          58.3
+        S6   21.0      15.0          71.4
+
+FIX3  regime counts (firm-years):
+acct_regime
+IFRS       113
+US-GAAP    166
+
+Accounting-regime flag is a capability proxy: US firms report under US-GAAP (LIFO permitted), non-US firms under IFRS (LIFO prohibited). The dataset does not record the actual inventory-costing method, so 'lifo_capable' marks only what the regime allows. Under LIFO, reported inventory and DIO can be understated versus FIFO/IFRS peers, so cross-country DIO levels are not perfectly comparable.

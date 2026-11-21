@@ -1,0 +1,4 @@
+Test,Metric,stat,p_value,Stars,Verdict
+Binary distress (chi-square),17.1% vs 12.6%,8.04,0.0046,***,SUPPORTED
+Binary distress (Fisher),OR=1.44,1.44,0.004,***,SUPPORTED
+Continuous ΔGM (Welch t),-0.56pp,-3.64,0.0003,***,SUPPORTED (v9 update — was null in v8)

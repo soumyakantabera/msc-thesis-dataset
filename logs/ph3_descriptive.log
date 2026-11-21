@@ -1,0 +1,68 @@
+====================================================================
+PHASE 3 — DESCRIPTIVE ANALYSIS v9 [FRESH]
+====================================================================
+  3055 firm-years, 279 firms, 13 sectors, 14 countries | AIG SD=0.1610
+  Panel is US-anchored: 166 of 279 firms (59%) are US-domiciled. Results are an intern...
+
+--------------------------------------------------------------------
+  TABLE 1 — summary statistics by super-group
+--------------------------------------------------------------------
+  saved table: Table1_summary_by_supergroup_v9.csv
+  saved figure: Figure1_DIO_boxplots_v9.png
+  saved figure: Figure2_AbnInvPeer_timeseries_v9.png
+  saved figure: Figure3_scatter_AbnInv_vs_dGM_v9.png
+  scatter: slope=-0.0198 corr=-0.075
+  saved table: Table2_correlation_v9.csv
+  saved table: Table2b_VIF_v9.csv
+  saved figure: Figure4_correlation_heatmap_v9.png
+  max VIF=1.01
+  saved table: Table3_distress_rate_sector_year_v9.csv
+  saved figure: Figure5_distress_heatmap_v9.png
+  saved figure: Figure6_StressScore_by_supergroup_v9.png
+  saved table: Table4_geographic_coverage_v9.csv
+  saved figure: Figure7_geographic_coverage_v9.png
+  saved figure: Figure8_inventory_quadrant_v9.png
+  saved figure: Figure9_distress_gradient_v9.png
+
+--------------------------------------------------------------------
+  TABLE 5 + FIGURE 10 — US vs international descriptive split [NEW]
+--------------------------------------------------------------------
+  saved table: Table5_US_vs_intl_descriptive_v9.csv
+  US                     firms=166 DIO=84 AIG=+0.000 distress=15.3%
+  International (ex-US)  firms=113 DIO=84 AIG=+0.000 distress=13.9%
+  Full panel             firms=279 DIO=84 AIG=+0.000 distress=14.7%
+  saved figure: Figure10_US_vs_intl_DIO_v9.png
+
+--------------------------------------------------------------------
+  TABLE 6 + FIGURE 11 — IFRS/GAAP accounting-regime comparability [NEW]
+--------------------------------------------------------------------
+  saved table: Table6_IFRS_GAAP_comparability_v9.csv
+  IFRS med DIO=84 vs US-GAAP med DIO=84 | Mann-Whitney p=0.125
+  Accounting-regime flag is a capability proxy: US firms report under US-GAAP (LIFO permitte...
+  saved figure: Figure11_IFRS_GAAP_DIO_v9.png
+
+====================================================================
+  OVERALL FINDINGS TABLE
+====================================================================
+  saved table: Table_FINDINGS_overall_v9.csv
+  - Inventory intensity (DIO) by sector: Varies ~4x: apparel/medical longest, mass-retail shortest.
+      => Justifies peer-adjustment within super-group x year.
+  - AbnInvPeer over time: Centred ~0 by construction; series noisy, no single clean COVID spike.
+      => Use neutral framing; do not over-read the 2020-22 band.
+  - AbnInvPeer vs next-yr ΔGM: Negative but modest: Pearson r=-0.075, OLS slope -0.0198.
+      => Real but gentle descriptively; conditional regression is stronger.
+  - Multicollinearity: Max VIF=1.01; AIG weakly correlated with controls.
+      => AbnInvPeer is not proxying for size/leverage.
+  - Distress decile gradient: Decile 1=15.7% -> decile 10=23.3%; trend +0.8pp/decile but NOT strictly monotonic.
+      => Report as positively-trended, not monotonic (honest).
+  - Geographic coverage: 279 firms, 14 countries; US is largest single domicile (59%).
+      => Disclose: international extension of a US-anchored panel.
+  - US vs international (Table 5): Near-identical medians (DIO 84 both); Mann-Whitney p=0.12.
+      => US and non-US firms are descriptively comparable.
+  - IFRS/GAAP comparability (Table 6): Same partition as US/non-US (every US firm=GAAP, every non-US=IFRS); DIO medians ~equal, p=0.12.
+      => Accounting interpretation of the same split: LIFO-capability caveat does not distort DIO empirically.
+
+====================================================================
+  PHASE 3 v9 COMPLETE (fresh rebuild)
+====================================================================
+  Tables (8), Figures (11)

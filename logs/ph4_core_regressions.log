@@ -1,0 +1,104 @@
+==========================================================================
+PHASE 4 — CORE HYPOTHESIS REGRESSIONS v9 [FRESH]
+==========================================================================
+  Panel: 279 firms, 3055 firm-years | H1 usable: 2488 | AIG SD=0.1610
+  Panel is US-anchored: 166 of 279 firms (59%) are US-domiciled. Results are an internat...
+
+--------------------------------------------------------------------------
+  TABLE 4 — H1: AbnInvPeer -> next-year ΔGM (HEADLINE)
+--------------------------------------------------------------------------
+  (1) Pooled OLS — AIG only          β=-0.0103*   p=0.0577 | -0.166pp/SD
+  (2) Pooled — AIG+controls          β=-0.0172*** p=0.0028 | -0.277pp/SD
+  (3) Entity FE                      β=-0.0163*** p=0.0073 | -0.263pp/SD
+  (4) Entity+Year FE [HEADLINE]      β=-0.0152**  p=0.0135 | -0.244pp/SD
+  saved table: Table4_H1_DeltaGM_v9.csv
+  saved figure: Fig1_H1_coef_path.png
+
+--------------------------------------------------------------------------
+  TABLE 5 — H2: cash-flow margin (horizon)
+--------------------------------------------------------------------------
+  saved table: Table5_H2_CFO_horizon_v9.csv
+  Forward t+1: β=+0.0538*** p=0.0002 | Same-year: β=-0.1161*** p=0.0000
+  saved figure: Fig2_H2_horizon.png
+
+--------------------------------------------------------------------------
+  TABLE 6 — H3: quintile return sorts (EW + VW, 3 benchmarks)
+--------------------------------------------------------------------------
+  Peer super-group (PRIMARY)   EW=-0.0474(t=-3.03) VW=+0.0292(t=+0.57)
+  Regional index               EW=-0.0592(t=-4.36) VW=-0.0585(t=-0.94)
+  SPY                          EW=-0.0465(t=-3.39) VW=-0.0482(t=-0.82)
+  saved table: Table6_H3_quintiles_v9.csv
+  saved figure: Fig3_H3_quintiles.png
+
+--------------------------------------------------------------------------
+  TABLE 7 — H4: StressScore>=3 -> margin distress
+--------------------------------------------------------------------------
+  saved table: Table7_H4_distress_v9.csv
+  Score>=3: 17.1% vs Score<=1: 12.6% | χ²=8.04 p=0.0046
+  saved figure: Fig4_H4_distress.png
+  saved table: Table10_economic_magnitude_v9.csv
+
+--------------------------------------------------------------------------
+  TABLE 11 — alternative IV definitions
+--------------------------------------------------------------------------
+  Log diff, peer-median (primary)  β=-0.0152**
+  Simple %, peer-median            β=-0.0124**
+  Log diff, no peer adj            β=-0.0157***
+  saved table: Table11_alt_IV_v9.csv
+
+--------------------------------------------------------------------------
+  TABLE 12 — subperiod (pre/post-COVID)
+--------------------------------------------------------------------------
+  Pre-COVID 2014-2019    H1 β=-0.0051   (p=0.584) | H2 β=-0.0871***
+  Post-COVID 2020-2025   H1 β=-0.0178*  (p=0.071) | H2 β=-0.1450***
+  saved table: Table12_subperiod_v9.csv
+
+--------------------------------------------------------------------------
+  TABLE 13 — US-only vs international [MAIN, own-disclosure]
+--------------------------------------------------------------------------
+  US-only (166)            H1=-0.0106   (p=0.193) H2=-0.1375*** H3=-0.0365(t=-1.58) H4χ²=8.88
+  International ex-US (113) H1=-0.0227** (p=0.011) H2=-0.0847*** H3=-0.0572(t=-3.27) H4χ²=0.56
+  Full panel (279)         H1=-0.0152** (p=0.014) H2=-0.1161*** H3=-0.0474(t=-3.03) H4χ²=8.04
+  saved table: Table13_US_vs_intl_v9.csv
+
+--------------------------------------------------------------------------
+  TABLE 14 — placebo / falsification tests
+--------------------------------------------------------------------------
+  saved table: Table14_placebo_v9.csv
+  REAL: AIG -> next-yr ΔGM                   β=-0.0152**  p=0.013  [—]
+  Placebo A: AIG -> PRIOR-yr rev growth      β=+0.0414    p=0.140  [PASS]
+  Placebo B: permuted AIG -> next-yr ΔGM     β=-0.0029    p=0.532  [PASS]
+  saved figure: Fig_placebo_v9.png
+  saved figure: Fig6_H1_binned_scatter.png
+  saved figure: Fig8_summary_forest.png
+  saved figure: Fig9_channel_structure_v9.png
+
+==========================================================================
+  OVERALL FINDINGS TABLE
+==========================================================================
+  saved table: Table_FINDINGS_overall_v9.csv
+  - H1 next-year ΔGM (headline): β=-0.0152**, p=0.013 (-0.24pp per 1-SD)
+      => SUPPORTED; stable across ladder. Leans post-COVID & non-US (see T12/T13).
+  - H2 same-year ΔCFO: β=-0.1161***, p=0.000 (-1.87pp per 1-SD); CONTEMPORANEOUS (year t, not t+1).
+      => Strongest & most universal ASSOCIATION, but same-year -> it is a concurrent cash-drain signal, NOT an early-warning forecast. Only H1/H3/H4 are forward-looking (t+1).
+  - H3 returns (peer EW): Q5−Q1=-0.0474 (t=-3.03)
+      => SUPPORTED equal-weighted; value-weighted insignificant -> effect in smaller firms.
+  - H4 distress: χ²=8.04, p=0.005 (17% vs 13%)
+      => SUPPORTED full-panel & US-only; NOT significant ex-US (χ²=0.56) — likely power (113 firms).
+  - Placebo battery (T14): Prior-growth p=0.14; permuted p=0.53 (both null)
+      => Real effect is not a spurious artifact; reverse-causality and shuffle both null.
+  - US vs international (T13): H1 weak US-only (p~0.19) but stronger ex-US (p=0.01); H2 holds in both; H4 holds full-panel & US-only but NOT ex-US (chi2=0.56).
+      => Disclose: H2 is the only universally-robust result. H1 carried by non-US firms; H4 carried by US firms; H3 equal-weighted. Panel is 59% US.
+  - Subperiod (T12): H1 not significant pre-COVID; significant post-COVID. H2 both.
+      => H1 leans on post-2020 inventory-glut era — disclose.
+  - Sector concentration: Demoted to Phase 6 robustness; rejected there.
+      => Not a core hypothesis here (see outline 4A).
+  - Independence of evidence (CRITICAL): GM_distress = 1[ΔGM < -2pp]: H4 is a binary recoding of H1 outcome (~91% identical).
+      => H1 and H4 are TWO LENSES on ONE margin relationship, not independent pillars. Distinct channels: MARGIN (H1/H4), CASH (H2), RETURNS (H3) = 3, not 4.
+  - Multiple testing: H1 p=0.014 fails strict Bonferroni (0.0125 at 4 tests); H2/H3/H4 pass.
+      => Report H1 as significant at 0.05 but marginal under multiplicity correction.
+
+==========================================================================
+  PHASE 4 v9 COMPLETE (fresh rebuild)
+==========================================================================
+  Tables (10), Figures (8)

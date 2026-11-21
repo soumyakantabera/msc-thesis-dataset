@@ -1,0 +1,9 @@
+Firm,Ticker,Country,Sector,med_DIO,mean_AIG,sector_beta,sector_sig
+Nike,NKE-US,USA,Apparel,98.0,-0.004,-0.0194,no
+adidas,ADS-DE,DEU,Apparel,135.0,0.008,-0.0194,no
+Micron,MU-US,USA,Semiconductors,136.0,0.0,-0.0065,no
+Intel,INTC-US,USA,Semiconductors,107.0,0.043,-0.0065,no
+Texas Instr.,TXN-US,USA,Semiconductors,133.0,0.031,-0.0065,no
+Tesla,TSLA-US,USA,Automotive,63.0,-0.106,-0.018,no
+BMW,BMW-DE,DEU,Automotive,68.0,0.01,-0.018,no
+Burberry,BRBY-GB,GBR,Apparel,144.0,-0.031,-0.0194,no

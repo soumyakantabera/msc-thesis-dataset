@@ -1,0 +1,14 @@
+Sector,Label,beta,p_value,firms
+g1,Mass Retail,-0.0448,0.0579,18
+g2,Home & Specialty,-0.0253,0.2089,26
+g3,Apparel,-0.0194,0.2827,23
+g4,Automotive,-0.018,0.4593,25
+g5,Tech Hardware,-0.0015,0.9359,14
+g6,Semiconductors,-0.0065,0.7843,15
+g7,Aerospace,-0.0215,0.5611,19
+g8,Bldg Materials,0.0315,0.0583,22
+g9,Chemicals,-0.0232,0.3356,26
+g10,Beverages,0.0196,0.4121,14
+g11,Medical Devices,-0.0327,0.0461,21
+g12,Consumer Staples,-0.032,0.0269,29
+g13,Industrial,-0.0126,0.4212,27

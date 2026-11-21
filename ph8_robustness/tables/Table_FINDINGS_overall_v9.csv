@@ -1,0 +1,7 @@
+Item,Finding,Conclusion
+H1 robustness (alt-IV/splits/FE/winsor),Negative across nearly all specs; β stable -0.0273 to -0.0152 under winsorisation.,H1 is not a specification artifact; weak spots are pre-COVID & US-only (disclosed).
+Fama-MacBeth (H1),Time-series mean of yearly betas confirms the pooled estimate.,Result not driven by a single year or clustered-SE assumption.
+Distress threshold sensitivity,Significant at 1/2/3pp thresholds; null at 5pp.,"5pp null is a POWER limit (few firms fall that far), not a failure."
+IFRS/GAAP split (R6),H1 stronger in IFRS/non-US firms than US-GAAP firms.,Not a US-GAAP/LIFO accounting artifact; international firms carry H1.
+Placebo battery (R7),Reverse-time p=0.14; permuted p=0.53 (both null); real p=0.014.,Real effect survives falsification; not spurious panel structure.
+OLD-H4 semiconductor rejection,"Semis NOT significant under 13 distinct specifications (alt-IV, alt-ref, US/intl, FM, subperiod).",The v8 sector centrepiece is comprehensively rejected — not a single-spec result.

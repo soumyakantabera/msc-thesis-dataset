@@ -1,0 +1,4 @@
+Sample,beta,p_value,Stars,N
+All firms (base),-0.0152,0.0135,**,2488
+"IFRS only (non-US, no LIFO)",-0.0227,0.0105,**,1011
+US-GAAP only,-0.0106,0.1934,,1477

@@ -1,0 +1,9 @@
+Item,Finding,Conclusion
+Inventory intensity (DIO) by sector,"Varies ~4x: apparel/medical longest, mass-retail shortest.",Justifies peer-adjustment within super-group x year.
+AbnInvPeer over time,"Centred ~0 by construction; series noisy, no single clean COVID spike.",Use neutral framing; do not over-read the 2020-22 band.
+AbnInvPeer vs next-yr ΔGM,"Negative but modest: Pearson r=-0.075, OLS slope -0.0198.",Real but gentle descriptively; conditional regression is stronger.
+Multicollinearity,Max VIF=1.01; AIG weakly correlated with controls.,AbnInvPeer is not proxying for size/leverage.
+Distress decile gradient,Decile 1=15.7% -> decile 10=23.3%; trend +0.8pp/decile but NOT strictly monotonic.,"Report as positively-trended, not monotonic (honest)."
+Geographic coverage,"279 firms, 14 countries; US is largest single domicile (59%).",Disclose: international extension of a US-anchored panel.
+US vs international (Table 5),Near-identical medians (DIO 84 both); Mann-Whitney p=0.12.,US and non-US firms are descriptively comparable.
+IFRS/GAAP comparability (Table 6),"Same partition as US/non-US (every US firm=GAAP, every non-US=IFRS); DIO medians ~equal, p=0.12.",Accounting interpretation of the same split: LIFO-capability caveat does not distort DIO empirically.

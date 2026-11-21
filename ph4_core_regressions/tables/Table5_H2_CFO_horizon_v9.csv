@@ -1,0 +1,3 @@
+Horizon,Coef,SE,p_value,Stars,pp_per_1SD,N_obs,Note
+Forward (t+1),0.05376,0.01424,0.0002,***,0.866,2488,mean-reversion
+Same-year (t) [CORRECT],-0.1161,0.01894,0.0,***,-1.87,2488,contemporaneous cash drain
